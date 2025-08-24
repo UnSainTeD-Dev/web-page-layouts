@@ -1,0 +1,698 @@
+/** HEADER **/
+
+/* .header {null} */
+/* .container {default} */
+
+.header__inner {
+    position: relative;
+}
+
+/** NAVIGATION */
+
+.header__nav {
+    position: absolute;
+    inset: 38px 165px;
+    display: inline-flex;
+    max-height: 37px;
+    z-index: 1;
+    white-space: nowrap;
+}
+
+/** NAVIGATION-BRAND */
+
+.header__brand {
+    display: flex;
+    align-items: center;
+}
+
+/* .header__brand-logo {null} */
+
+.header__brand-name {
+    font-family: "Prosto One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #656293;
+    margin: 0 0 -3px -15px;
+    /* t r b l */
+}
+
+/** NAVIGATION-MENU */
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-left: 150px;
+}
+
+.header__menu-item {
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+.header__menu-item:last-child {
+    margin-right: 95px;
+}
+
+/** NAVIGATION-ACTIONS */
+
+.header__actions {
+    display: flex;
+    gap: 42px;
+}
+
+.header__action-btn {
+    background: transparent;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+}
+
+/** HEADER-BACKGROUND */
+
+.header__hero {
+    position: relative;
+    background:
+        linear-gradient(#e9f7f5cc, #eaf7f6cc),
+        url("../images/background/header-bg.jpg") center top / var(--bg-size) no-repeat fixed;
+    height: 751px;
+}
+
+.header__hero-window {
+    position: absolute;
+    inset: 136px 923px;
+    background: url("../images/background/header-bg.jpg") center top / var(--bg-size) no-repeat fixed;
+    border: 15px solid #ffffff;
+    border-radius: 120px;
+    box-shadow: inset 0 -10px 10px 0 #00000050, 0 -2px 10px 0 #00000050;
+    height: 452px;
+    width: 360px;
+    overflow: hidden;
+}
+
+/* TODO: сделать градиент через ::before у .header__hero, а у .header__hero-window — background: inherit; */
+
+.header__hero-title {
+    position: absolute;
+    inset: 256px 165px;
+    line-height: 77px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 66px;
+}
+
+.header__hero-title strong {
+    color: #656293;
+}
+
+.header__hero-link {
+    position: absolute;
+    inset: 459px 165px;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.header__hero-icon {
+    position: absolute;
+    inset: 462px 272px;
+}
+
+/** MAIN */
+
+/* .main {null} */
+.main__inner {
+    position: relative;
+}
+
+/** BOOKING */
+
+.booking {
+    position: absolute;
+    inset: -115px 165px;
+}
+
+.booking__panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: solid 1px #d2d2d248;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px 2px #d2d2d2a9;
+    height: 266px;
+    width: 1110px;
+    padding: 34px 30px;
+}
+
+.booking__parameters {
+    display: inline-flex;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 14px;
+    gap: 10px;
+}
+
+.booking__parametres-item {
+    display: inline-flex;
+    align-content: center;
+}
+
+.booking__parametres-item::after {
+    content: url(../images/decoration/arrow-drop.svg);
+}
+
+.booking__directions {
+    display: inline-flex;
+    gap: 6px;
+    margin-top: 14px;
+}
+
+.booking__direction {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #a8a8a8;
+    border-radius: 10px;
+    height: 117px;
+    width: 300px;
+    gap: 4px;
+    padding: 16px 20px;
+}
+
+.booking__direction-title {
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #909090;
+}
+
+.booking__direction-city {
+    line-height: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #000000;
+}
+
+.booking__direction-desc {
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #909090;
+}
+
+.direction--from {}
+
+.booking__directions-swap {
+    display: flex;
+    background-color: transparent;
+    border: solid 1px #a8a8a865;
+    border-radius: 50%;
+    height: 28px;
+    width: 28px;
+    align-self: center;
+    padding: 4px;
+}
+
+.direction--to {}
+
+.booking__calendar {
+    display: grid;
+    width: 381px;
+    margin-left: 24px;
+    column-gap: 10px;
+}
+
+.booking__calendar--departure {
+    display: grid;
+    column-gap: 10px;
+    grid-column: 1;
+    grid-template-rows: auto auto auto;
+    row-gap: 4px;
+}
+
+.booking__calendar-title {
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #909090;
+    grid-row: 1;
+}
+
+.booking__calendar-date {
+    line-height: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    color: #000000;
+    grid-row: 2;
+}
+
+.booking__calendar-btns {
+    display: flex;
+    gap: 44px;
+    grid-row: 3;
+}
+
+.booking__calendar-btn {
+    background-color: transparent;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    color: #909090;
+}
+
+.booking__calendar--image {
+    align-self: center;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.booking__calendar--return {
+    display: grid;
+    column-gap: 10px;
+    grid-column: 2;
+    grid-template-rows: auto auto auto;
+    row-gap: 4px;
+}
+
+.booking__requirements {
+    display: flex;
+    background-color: transparent;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    margin-top: 16px;
+}
+
+.booking__book-btn {
+    position: absolute;
+    inset: 230px 440px;
+    display: flex;
+    background-color: #656293;
+    border-radius: 12px;
+    height: 80px;
+    width: 233px;
+    align-items: center;
+    text-align: center;
+    line-height: 27px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #ffffff;
+    padding: 30px;
+}
+
+.booking__book-btn img {
+    margin-left: 40px;
+}
+
+/** JET */
+
+.jet {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: 0 151px 0 199px;
+}
+
+.section-title {
+    text-align: center;
+    line-height: 54px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.jet-mt {
+    margin-top: 260px;
+}
+
+.jet__about {
+    position: relative;
+    display: inline-flex;
+}
+
+.jet__bg--left {
+    position: absolute;
+    left: -199px;
+    z-index: -1;
+}
+
+.jet__bg--right {
+    position: absolute;
+    right: -159px;
+    z-index: -1;
+}
+
+.jet__about-private {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 66px;
+}
+
+.jet__about-business {
+    display: flex;
+    align-items: center;
+    gap: 38px;
+    margin-top: 66px;
+}
+
+.jet__about-image {
+    border-radius: 20px;
+    height: 392px;
+    width: 589px;
+}
+
+.jet__about-content {
+    display: block;
+}
+
+.section-subtitle {
+    line-height: 36px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 24px;
+    margin-bottom: 14px;
+}
+
+.jet__about-content p {
+    display: flex;
+    text-align: justify;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #151515a8;
+    word-spacing: 2px;
+}
+
+/** SPECIFICATIONS */
+
+.specs {
+    position: relative;
+    margin: 147px 165px 0;
+}
+
+.specs__bg-plane {
+    position: absolute;
+    inset: 240px 395px;
+    width: 320px;
+    z-index: -1;
+}
+
+.specs__grid {
+    display: grid;
+    justify-content: space-between;
+    margin-top: 68px;
+    row-gap: 30px;
+}
+
+.specs__item {
+    display: flex;
+    flex-direction: column;
+    border: solid 1px #d2d2d248;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px 2px #d2d2d2a9;
+    height: 268px;
+    width: 370px;
+    align-items: center;
+    gap: 12px;
+    padding: 38px 20px;
+}
+
+.specs__item-title {
+    text-align: justify;
+    line-height: 27px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.specs__item-text {
+    text-align: center;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #151515a8;
+    word-spacing: 2px;
+}
+
+.specs__item-icon {
+    height: 55px;
+    width: 55px;
+}
+
+.specs__item--col-1 {
+    grid-column: 1;
+}
+
+.specs__item--col-2 {
+    grid-column: 2;
+}
+
+/** LUXURY */
+
+.lux {
+    position: relative;
+    margin: 66px 165px 0;
+}
+
+.lux__bg-planet {
+    position: absolute;
+    right: -174px;
+    color: #bcbcbc;
+    z-index: -1;
+}
+
+.lux__charters {
+    display: flex;
+    gap: 30px;
+    margin-top: 69px;
+}
+
+.charters__item {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    border: solid 1px #d2d2d248;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px 2px #d2d2d2a9;
+    height: 251px;
+    width: 255px;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 12px 52px;
+}
+
+.charters__item-image {
+    border-radius: 12px;
+}
+
+.charters__item-title {
+    text-align: center;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+}
+
+/** MEMBERSHIP */
+
+.membership {
+    margin: 66px 100px 218px 100px;
+}
+
+.membership__cards {
+    display: inline-flex;
+    gap: 25px;
+    margin-top: 80px;
+}
+
+.membership__card {
+    display: flex;
+    flex-direction: column;
+    background-color: #f5f5f5;
+    border-radius: 20px 0 0 20px;
+    height: 572px;
+    width: 400px;
+    transition: transform 0.3s ease-in;
+    z-index: 1;
+    padding: 24px;
+}
+
+.card-business {
+    border-radius: 0 0 0 0;
+}
+
+.card-elite {
+    border-radius: 0 20px 20px 0;
+}
+
+.membership__card:hover {
+    background-color: #656293;
+    border-radius: 20px;
+    color: #ffffff;
+    transform: scale(1.05) translateY(-8%);
+
+    .membership__btn {
+        background-color: #ffffff;
+        color: #000000;
+        cursor: pointer;
+    }
+
+    .membership__feature::before {
+        content: url(../images/decoration/check-circle-white.svg);
+    }
+}
+
+.membership__card-title {
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+}
+
+.membership__card-desc {
+    line-height: 33px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 22px;
+    color: #a8a8a8;
+    margin: 32px 0 24px 0;
+}
+
+.membership__features {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.membership__feature {
+    display: inline-flex;
+    line-height: 24px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 16px;
+}
+
+.membership__feature::before {
+    content: url(../images/decoration/check-circle.svg);
+    margin-right: 8px;
+}
+
+.membership--separator {
+    border: dashed 1px #a8a8a8;
+    width: 100%;
+    margin: 16px 0 50px 0;
+}
+
+.membership__card-cost {
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.membership__card-cost strong {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+.membership__btn {
+    background-color: #656293;
+    border-radius: 12px;
+    height: 64px;
+    width: 352px;
+    line-height: 40px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 22px;
+    color: #ffffff;
+}
+
+/** FOOTER */
+
+.footer__inner {
+    display: flex;
+    flex-direction: column;
+    background-color: #656293;
+    height: 170px;
+    width: 100%;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 37px;
+    width: 139px;
+    margin: 50px 0 30px 0;
+}
+
+.footer__nav {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 78%;
+    align-items: center;
+    line-height: 21px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #cccccc;
+    border-top: solid 1px #a8a8a875;
+}
+
+.footer__nav-items {
+    display: flex;
+    height: 21px;
+    width: 327px;
+    white-space: nowrap;
+}
+
+.footer__nav-item {
+    margin-right: 30px;
+}
+
+.footer__nav-item:last-child {
+    margin-right: 0;
+}
