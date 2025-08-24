@@ -1,7 +1,6 @@
 /** HEADER **/
 
 /* .header {null} */
-/* .container {default} */
 
 .header__inner {
     position: relative;
@@ -34,7 +33,6 @@
     font-size: 22px;
     color: #656293;
     margin: 0 0 -3px -15px;
-    /* t r b l */
 }
 
 /** NAVIGATION-MENU */
@@ -58,20 +56,33 @@
     margin-right: 95px;
 }
 
+.header__menu-item:hover {
+    background: #ffffff;
+    border-radius: 50%;
+    height: 30px;
+}
+
 /** NAVIGATION-ACTIONS */
 
 .header__actions {
     display: flex;
-    gap: 42px;
+    gap: 25px;
 }
 
 .header__action-btn {
     background: transparent;
+    border-radius: 20px;
+    width: 80px;
     line-height: 21px;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     font-style: normal;
     font-size: 14px;
+}
+
+.header__action-btn:hover {
+    background-color: #656293;
+    color: #ffffff;
 }
 
 /** HEADER-BACKGROUND */
@@ -101,6 +112,7 @@
 .header__hero-title {
     position: absolute;
     inset: 256px 165px;
+    width: 600px;
     line-height: 77px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
@@ -125,6 +137,12 @@
 .header__hero-icon {
     position: absolute;
     inset: 462px 272px;
+}
+
+.header__hero-link:hover {
+    color: #656293;
+    text-decoration: underline;
+
 }
 
 /** MAIN */
@@ -227,7 +245,13 @@
     height: 28px;
     width: 28px;
     align-self: center;
+    transition: transform 0.3s ease-in;
     padding: 4px;
+}
+
+.booking__directions-swap:hover {
+    border: dashed 2px #a8a8a8a8;
+    transform: scale(1.1);
 }
 
 .direction--to {}
@@ -308,14 +332,18 @@
     margin-top: 16px;
 }
 
+.booking__requirements:hover {
+    text-decoration: underline;
+}
+
 .booking__book-btn {
     position: absolute;
     inset: 230px 440px;
     display: flex;
     background-color: #656293;
     border-radius: 12px;
-    height: 80px;
-    width: 233px;
+    height: 70px;
+    width: 220px;
     align-items: center;
     text-align: center;
     line-height: 27px;
@@ -324,11 +352,16 @@
     font-style: normal;
     font-size: 18px;
     color: #ffffff;
-    padding: 30px;
+    transition: transform 0.3s ease-in-out;
+    padding: 20px;
 }
 
 .booking__book-btn img {
     margin-left: 40px;
+}
+
+.booking__book-btn:hover {
+    transform: scale(1.2);
 }
 
 /** JET */
