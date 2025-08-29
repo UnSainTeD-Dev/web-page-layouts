@@ -81,13 +81,13 @@ html, body {
 }
 
 .button--empty {
+  background-position: 0 100%, 0 0;
   background-size: 100% 2px;
   background-repeat: no-repeat;
   background-clip: border-box;
   background-image: none;
   background-image: -webkit-linear-gradient(left, #FF3F3A, #F75E05), -webkit-linear-gradient(left, #FF3F3A, #F75E05);
   background-image: linear-gradient(left, #FF3F3A, #F75E05), linear-gradient(left, #FF3F3A, #F75E05);
-  background-position: 0 100%, 0 0;
   border-left: 2px solid #FF3F3A;
   border-right: 2px solid #F75E05;
 }
@@ -107,9 +107,9 @@ html, body {
 .heading__subtitle {
   line-height: 150%;
   font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 8px;
-  text-transform: uppercase;
 }
 
 .heading__title {
@@ -190,11 +190,11 @@ html, body {
   top: 50%;
   left: 0;
   display: block;
+  content: "";
   background: url("../images/icons/user-icon.svg") no-repeat;
   height: 20px;
   width: 20px;
   transform: translateY(-50%);
-  content: "";
 }
 
 .header__user-btn {
@@ -316,10 +316,10 @@ html, body {
   position: absolute;
   top: -80px;
   right: -140px;
+  content: "";
   background: url("../images/decor/1.svg");
   height: 85px;
   width: 100px;
-  content: "";
 }
 
 .about__createx-content {
@@ -382,8 +382,8 @@ html, body {
 
 .about__numbers {
   align-self: center;
-  white-space: nowrap;
   margin-left: 30px;
+  white-space: nowrap;
 }
 
 .about__number {
@@ -416,10 +416,10 @@ html, body {
   top: 30px;
   left: -190px;
   display: block;
+  content: "";
   background: url("../images/decor/2.svg") 0 0 no-repeat;
   height: 115px;
   width: 136px;
-  content: "";
 }
 
 .directions__inner::after {
@@ -427,10 +427,10 @@ html, body {
   top: 400px;
   right: -400px;
   display: block;
+  content: "";
   background: url("../images/decor/3.svg") 0 0 no-repeat;
   height: 243px;
   width: 243px;
-  content: "";
   opacity: .12;
 }
 
@@ -442,13 +442,13 @@ html, body {
 
 .directions__filter-box {
   display: flex;
-  flex-wrap: wrap;
   margin-bottom: 40px;
+  flex-wrap: wrap;
 }
 
 .directions__filter-item {
-  margin-bottom: 15px;
   margin-right: 45px;
+  margin-bottom: 15px;
 }
 
 .directions__filter-item:last-child {
@@ -558,8 +558,8 @@ html, body {
   line-height: 1;
   font-weight: 700;
   color: #fff;
-  padding: 6px 8px;
   margin-bottom: 20px;
+  padding: 6px 8px;
 }
 
 .directions__link-text {
@@ -576,10 +576,10 @@ html, body {
 
 .directions__link-btn::after {
   display: block;
+  content: "";
   background: url("../images/icons/arrow-right-red.svg") 0 2px / 100% no-repeat;
   height: 24px;
   width: 24px;
-  content: "";
   margin-left: 11px;
 }
 
@@ -598,10 +598,10 @@ html, body {
   top: -15px;
   left: -190px;
   display: block;
+  content: "";
   background: url("../images/decor/4.svg") 0 0 no-repeat;
   height: 60px;
   width: 60px;
-  content: "";
 }
 
 .cert__content {
@@ -667,8 +667,8 @@ html, body {
 .team__image-box {
   position: relative;
   border-radius: 4px;
-  overflow: hidden;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .team__image {
@@ -763,6 +763,7 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
+  content: "";
   background-color: #FF3F3A;
   border-radius: 50%;
   height: 48px;
@@ -770,7 +771,6 @@ html, body {
   transition: all .3s;
   transform: translate(-50%, -50%) scale(0);
   z-index: -1;
-  content: "";
 }
 
 .team__slider-arrow:hover path {
@@ -798,11 +798,11 @@ html, body {
   position: absolute;
   top: 50%;
   left: 50%;
+  content: "";
   background: url("../images/decor/testi-bg.svg") 0 0 / 100% no-repeat;
   height: 816px;
   width: 1971px;
   transform: translate(-44.9%, -55.4%);
-  content: "";
 }
 
 .testimonials__inner {
@@ -816,8 +816,8 @@ html, body {
 
 .testimonials__slider-wrapper {
   position: relative;
-  padding: 0 50px;
   margin-bottom: 50px;
+  padding: 0 50px;
 }
 
 .testimonials__slider {
@@ -848,10 +848,10 @@ html, body {
   position: absolute;
   top: 0;
   left: -58px;
+  content: "";
   background: url("../images/icons/quote-icon.svg") 0 0 / 100% no-repeat;
   height: 20px;
   width: 28px;
-  content: "";
 }
 
 .testimonials__user {
@@ -861,8 +861,8 @@ html, body {
 
 .testimonials__avatar {
   border-radius: 50%;
-  overflow: hidden;
   margin-right: 20px;
+  overflow: hidden;
 }
 
 /* .testimonials__info {null} */
@@ -897,13 +897,13 @@ html, body {
   position: absolute;
   top: 50%;
   display: block;
+  content: "";
   background-color: #FF3F3A;
   border-radius: 50%;
   height: 48px;
   width: 48px;
   transition: all .3s;
   z-index: -1;
-  content: "";
 }
 
 .testimonials__prev {
@@ -961,11 +961,11 @@ html, body {
 }
 
 .testimonials__dots button::before {
+  content: "";
   background-color: #B3B7BC;
   border-radius: 3px;
   height: 3px;
   width: 100%;
-  content: "";
 }
 
 .testimonials__dots .slick-active button::before {
@@ -987,10 +987,10 @@ html, body {
   position: absolute;
   bottom: -120px;
   left: -230px;
+  content: "";
   background: url("../images/decor/5.svg") 0 0 / 100% no-repeat;
   height: 90px;
   width: 90px;
-  content: "";
 }
 
 .companies__heading {
@@ -1075,11 +1075,11 @@ html, body {
   position: absolute;
   top: 50%;
   left: -40px;
+  content: "";
   background-color: #FF3F3A;
   border-radius: 2px;
   height: 2px;
   width: 18px;
-  content: "";
 }
 
 .program__acc-head::after {
@@ -1149,8 +1149,8 @@ html, body {
   position: relative;
   border-radius: 4px;
   max-height: 315px;
-  overflow: hidden;
   margin-bottom: 16px;
+  overflow: hidden;
 }
 
 .blog__image-box img {
@@ -1172,9 +1172,9 @@ html, body {
 
 .blog__image-box span::before {
   display: block;
+  content: "";
   height: 16px;
   width: 16px;
-  content: "";
   margin-right: 4px;
 }
 
@@ -1202,11 +1202,11 @@ html, body {
   position: absolute;
   top: 50%;
   right: 0;
+  content: "";
   background-color: #787A80;
   height: 12px;
   width: 1px;
   transform: translateY(-50%);
-  content: "";
 }
 
 .blog__info-el:last-child::after {
@@ -1220,10 +1220,10 @@ html, body {
 
 .blog__info-date::before {
   display: block;
+  content: "";
   background: url("../images/icons/calendar-icon.svg") 0 0 / 100% no-repeat;
   height: 15px;
   width: 16px;
-  content: "";
   margin-right: 9px;
 }
 
@@ -1234,10 +1234,10 @@ html, body {
 
 .blog__info-time::before {
   display: block;
+  content: "";
   background: url("../images/icons/clock-icon.svg") 0 0 / 100% no-repeat;
   height: 15px;
   width: 16px;
-  content: "";
   margin-right: 9px;
 }
 
@@ -1250,8 +1250,8 @@ html, body {
 }
 
 .blog__item-text {
-  flex-grow: 1;
   margin-bottom: 16px;
+  flex-grow: 1;
 }
 
 .blog__item-btn {
@@ -1263,10 +1263,10 @@ html, body {
 }
 
 .blog__item-btn::after {
+  content: "";
   background: url("../images/icons/arrow-right-red.svg") 0 0 / 100% no-repeat;
   height: 24px;
   width: 24px;
-  content: "";
   margin-left: 8px;
 }
 
@@ -1347,9 +1347,9 @@ html, body {
   position: absolute;
   top: 0;
   left: -36px;
+  content: "";
   height: 24px;
   width: 24px;
-  content: "";
 }
 
 .info__item-link {
@@ -1384,9 +1384,9 @@ html, body {
 .info__follow-head {
   line-height: 150%;
   font-weight: 700;
+  text-transform: uppercase;
   letter-spacing: 1px;
   margin-bottom: 24px;
-  text-transform: uppercase;
 }
 
 .info__socials {
@@ -1472,8 +1472,8 @@ html, body {
   border: 1px solid #D7DADD;
   border-radius: 4px;
   width: 100%;
-  padding: 13px 16px;
   margin-top: 8px;
+  padding: 13px 16px;
 }
 
 .questions__form-input::placeholder,
@@ -1598,11 +1598,11 @@ html, body {
 .footer__top-title {
   line-height: 150%;
   font-weight: 700;
-  letter-spacing: 1px;
-  white-space: nowrap;
-  margin-bottom: 12px;
-  pointer-events: none;
   text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+  white-space: nowrap;
+  pointer-events: none;
 }
 
 .footer__top-col:last-child .footer__top-title {
@@ -1667,11 +1667,11 @@ html, body {
 
 .footer__form-btn::before {
   display: block;
+  content: "";
   background: url("../images/icons/arrow-right-mini.svg");
   height: 16px;
   width: 16px;
   transition: all .3s;
-  content: "";
 }
 
 .footer__form-btn:hover::before {
@@ -1706,9 +1706,9 @@ html, body {
   line-height: 150%;
   font-weight: 700;
   font-size: 14px;
+  text-transform: uppercase;
   transition: all .3s;
   opacity: 0.6;
-  text-transform: uppercase;
 }
 
 .footer__go-top:hover {
@@ -1810,11 +1810,11 @@ html, body {
   .burger::before,
   .burger::after {
     display: block;
+    content: "";
     background-color: #424551;
     border-radius: 3px;
     height: 4px;
     width: 30px;
-    content: "";
   }
 
   .header {
@@ -1927,14 +1927,14 @@ html, body {
 
   .footer__top-col:first-child {
     max-width: none;
-    flex-basis: 100%;
     margin-bottom: 30px;
+    flex-basis: 100%;
   }
 
   .footer__top-col:last-child {
     max-width: none;
-    flex-basis: 100%;
     margin-bottom: 0px;
+    flex-basis: 100%;
   }
 
   .footer__form-items {
