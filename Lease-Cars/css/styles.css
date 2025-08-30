@@ -160,9 +160,9 @@
 
 .why-lease__list {
     display: grid;
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     gap: 40px;
-    grid-template-columns: repeat(4, 1fr);
 }
 
 /* .why-lease__item {null} */
@@ -459,8 +459,8 @@
 
 .blog__items {
     display: grid;
-    gap: 40px;
     grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
 }
 
 .blog__item {
@@ -541,8 +541,8 @@
 
 .tabs__content-item {
     display: none;
-    gap: 100px 40px;
     grid-template-columns: repeat(4, 1fr);
+    gap: 100px 40px;
 }
 
 .tabs__content-item.tabs__content-item--active {

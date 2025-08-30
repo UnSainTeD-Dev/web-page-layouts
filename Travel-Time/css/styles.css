@@ -1,0 +1,241 @@
+/** PAGE **/
+
+/* .wrapper {default} */
+/* .container {default} */
+
+/* SEPARATOR */
+
+.separator {
+    display: flex;
+    background-color: rgb(39, 39, 39);
+    height: 75px;
+}
+
+.logo {
+    height: 43px;
+    width: 83px;
+    margin: auto;
+}
+
+/** HEADER **/
+
+/* .header {null} */
+
+.header__inner {
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    text-shadow: var(--text-shadow);
+}
+
+.header__container {
+    position: absolute;
+    inset: 0;
+    z-index: 5;
+}
+
+/* HEADER NAVIGATION */
+
+.header__nav {
+    padding: 72px 135px 100px;
+}
+
+.header__nav-list {
+    display: flex;
+    gap: 128px;
+}
+
+/* .header__nav-item {null} */
+
+.header__nav-item:hover {
+    box-shadow: inset 0 -2px rgba(255, 255, 255, 0.5);
+}
+
+.header__nav-link {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* HEADER HERO */
+
+.header__hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    font-weight: 700;
+    font-size: 6rem;
+}
+
+.header__hero-intro {
+    max-width: 750px;
+    text-align: center;
+    font-weight: 200;
+    font-size: 1.5rem;
+    margin-top: -10px;
+}
+
+.header__hero-link {
+    position: absolute;
+    bottom: 130px;
+    background-color: rgb(0, 180, 61);
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 12px;
+    width: 200px;
+    text-align: center;
+    line-height: 1.2;
+    font-weight: 600;
+    font-size: 1.5rem;
+    transition: all .3s ease-in;
+    padding: 16px 0;
+}
+
+.header__hero-link:hover {
+    border: 2px solid rgb(255, 255, 255);
+    transform: scale(1.2);
+}
+
+/** SLIDER **/
+
+/* .slider {null} */
+
+/* .swiper {null} */
+
+.swiper::after {
+    position: absolute;
+    inset: 0;
+    content: '';
+    background: rgba(21, 21, 21, .3);
+    z-index: 0;
+}
+
+/* .swiper-wrapper {null} */
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+/* .swiper-pagination {null} */
+
+.swiper-pagination-bullet {
+    background-color: #151515;
+    border-radius: 0;
+    height: 3px;
+    width: 120px;
+    margin: 0 15px 50px !important;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #ffffff;
+    height: 6px;
+}
+
+/** MAIN **/
+
+.main {
+    flex-grow: 1;
+}
+
+.main__inner {
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    text-shadow: var(--text-shadow);
+}
+
+/* MAIN TOURS */
+
+.main__tours {
+    padding: 130px 0;
+}
+
+.main__tours-title {
+    text-align: center;
+    font-weight: 500;
+    font-size: 2.5rem;
+}
+
+.main__tours-list {
+    display: flex;
+    gap: 24px;
+    padding: 54px 44px 0;
+}
+
+.main__tours-item {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(88, 88, 88, 0.6);
+    height: 585px;
+    width: 320px;
+    padding: 24px;
+}
+
+.main__tours-img {
+    border-radius: 8px;
+    height: 252px;
+    width: 272px;
+    margin-bottom: 17px;
+}
+
+.main__tours-place {
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 6px;
+}
+
+.main__tours-description {
+    font-weight: 200;
+    font-size: var(--font-size);
+    margin-bottom: 38px;
+}
+
+.main__tours-link {
+    background-color: rgba(78, 78, 78, 0.55);
+    border-radius: 8px;
+    align-self: flex-end;
+    text-align: center;
+    line-height: 2.4;
+    font-weight: 600;
+    font-size: 0.75rem;
+    padding: 6px 16px;
+}
+
+.main__tours-link:hover {
+    background-color: rgba(0, 180, 60, 0.55);
+}
+
+/** FOOTER **/
+
+/* .footer {null} */
+
+.footer__inner {
+    line-height: var(--line-height);
+    font-family: var(--font-family);
+    color: rgb(255, 255, 255);
+    text-shadow: var(--text-shadow);
+}
+
+/* FOOTER ABOUT */
+
+.footer__about {
+    display: flex;
+    flex-direction: column;
+    padding: 130px 120px;
+}
+
+.footer__about-title {
+    font-weight: 500;
+    font-size: 3rem;
+    padding-bottom: 64px;
+}
+
+.footer__about-text {
+    font-weight: 200;
+    font-size: 2rem;
+}
