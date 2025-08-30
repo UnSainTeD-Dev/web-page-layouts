@@ -1,0 +1,356 @@
+@media (max-width: 1160px) {
+
+    /** IMPORTANT INFORMATION **/
+    .important__item-img {
+        width: 100%;
+    }
+
+    /** NEW CARS **/
+    .tabs__btn {
+        gap: 40px;
+        padding: 0 130px 60px;
+    }
+
+    .tabs__content-item {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 50px 30px;
+    }
+}
+
+@media (max-width: 1040px) {
+
+    /** WHY LEASE WITH D&M? **/
+    .why-lease__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /** PROMO-VIDEO **/
+    .promo-video__content {
+        width: 100%;
+    }
+
+    /** IMPORTANT INFORMATION **/
+    .important-info__list {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px 20px;
+    }
+
+    /** BLOG **/
+    .blog__item-title {
+        font-size: 18px;
+        flex-basis: 350px;
+    }
+
+    /** NEW CARS **/
+    .tabs__btn {
+        gap: 20px;
+        padding: 0 80px 40px;
+    }
+}
+
+@media (max-width: 860px) {
+
+    /** NAVIGATION **/
+    .nav__btn {
+        display: flex;
+    }
+
+    .nav__btn,
+    .logo {
+        position: relative;
+        z-index: 2;
+    }
+
+    .nav__list {
+        position: absolute;
+        inset: 0;
+        flex-direction: column;
+        background-color: #151515;
+        height: 100vh;
+        align-items: center;
+        transition: transform .3s ease, opacity .2s ease;
+        transform: translateY(-100%);
+        z-index: 1;
+        padding-top: 200px;
+        opacity: 0;
+        will-change: transform;
+    }
+
+    .nav__list.nav__list--active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /** TOP MAIN **/
+    .title {
+        font-size: 70px;
+    }
+
+    /** PROMO-VIDEO **/
+    .promo-video__content {
+        height: 400px;
+    }
+
+    /** BLOG **/
+    .blog__item-img {
+        margin-bottom: 20px;
+    }
+
+    .blog__item-title {
+        font-size: 16px;
+        flex-basis: 280px;
+    }
+
+    .blog__item-link {
+        height: 35px;
+        width: 60px;
+        padding: 4px 10px;
+    }
+
+    /** NEW CARS **/
+    .tabs__btn {
+        gap: 20px;
+        padding: 0 0 40px;
+    }
+
+    .tabs__content-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+@media (max-width: 730px) {
+
+    /** TOP MAIN **/
+    .top {
+        padding-top: 150px;
+    }
+
+    .top__link {
+        max-width: 320px;
+        font-size: 24px;
+        padding: 15px;
+    }
+
+    /** SLIDER **/
+    .swiper-slide {
+        height: 50vh;
+    }
+
+    .swiper-pagination-bullet {
+        height: 2px;
+        width: 60px;
+    }
+
+    .swiper-pagination-bullet-active {
+        height: 4px;
+    }
+
+    /** FOOTER NAVIGATION **/
+    .footer__nav {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    /** NEW CARS **/
+    .choose-car {
+        padding-top: 30px;
+    }
+
+    .tabs__btn {
+        gap: 10px;
+        padding: 0 0 40px;
+    }
+
+    .tabs__btn-item {
+        font-weight: 700;
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 690px) {
+
+    /** PROMO-VIDEO **/
+    .promo-video__content {
+        height: 300px;
+    }
+}
+
+@media (max-width: 610px) {
+
+    /** TOP MAIN **/
+    .title {
+        font-size: 40px;
+    }
+
+    .top__link {
+        max-width: 240px;
+        font-size: 18px;
+    }
+
+    /** SLIDER **/
+    .swiper-pagination-bullet {
+        width: 40px;
+        margin: 0 10px 20px !important;
+    }
+
+    /** WHY LEASE WITH D&M? **/
+    .section-title {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .why-lease {
+        padding: 30px 0;
+    }
+
+    .why-lease__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+    }
+
+    .why-lease__item-img {
+        width: 30%;
+        margin-bottom: 10px;
+    }
+
+    .why-lease__item-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    /** HOW LEASE? **/
+    .how-lease {
+        padding-bottom: 30px;
+    }
+
+    .how-lease__inner {
+        max-width: 500px;
+    }
+
+    .how-lease__list {
+        padding: 20px 0px;
+    }
+
+    .how-lease__item {
+        font-size: 14px;
+        margin-right: auto;
+        padding: 60px 0 0 0;
+    }
+
+    .how-lease__item+.how-lease__item {
+        margin-top: 20px;
+    }
+
+    .how-lease__item::before {
+        right: 0;
+        height: 50px;
+        width: 50px;
+        font-size: 24px;
+        margin: 0 auto;
+    }
+
+    /** PROMO-VIDEO **/
+    .promo-video {
+        padding-bottom: 30px;
+    }
+
+    .promo-video__text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .promo-video__content {
+        height: 250px;
+    }
+
+    /** IMPORTANT INFORMATION **/
+    .important-info {
+        padding-bottom: 30px;
+    }
+
+    .important-info__list {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 25px 20px;
+    }
+
+    /** APPS **/
+    .apps {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    /** COPYRIGHT **/
+    .footer__copyright-links {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    /** CONTACTS **/
+    .contacts {
+        padding: 30px 0 0;
+    }
+
+    .conacts__text {
+        font-size: 18px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+
+    /** BLOG **/
+    .blog {
+        padding: 30px 0px;
+    }
+
+    .blog__item-title {
+        font-size: 16px;
+    }
+
+    .blog__item-link {
+        margin-top: 10px;
+    }
+
+    .showmore-link {
+        width: 160px;
+        font-size: 12px;
+        margin: 30px auto 0;
+        padding: 13px 40px;
+    }
+
+    /** NEW CARS **/
+    .tabs__btn {
+        flex-direction: column;
+    }
+
+    .tabs__content-item {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .card__description {
+        height: 132px;
+        gap: 10px;
+    }
+
+    .card__title {
+        font-size: 18px;
+        padding: 15px 5px 0;
+    }
+
+    .card__text {
+        font-size: 14px;
+        padding: 0 2px;
+    }
+
+    .card__price {
+        font-size: 16px;
+        margin-bottom: 10px;
+        padding: 0 5px;
+    }
+
+    .card__link {
+        font-size: 14px;
+    }
+}
