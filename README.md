@@ -40,10 +40,15 @@
 </details>
 
 - <details>
-   <summary><code>Travel Time/</code> | 2025-08-31 — сверстанный по макету Figma</summary>
+   <summary><code>Travel-Time/</code> | 2025-08-31 — сверстанный по макету Figma</summary>
    <img src="Travel-Time/images/poster-1.png" alt="Poster_Travel-Time" width="400">
    <img src="Travel-Time/images/poster-2.png" alt="Poster_Travel-Time" width="400">
    <img src="Travel-Time/images/poster-3.png" alt="Poster_Travel-Time" width="400">
+</details>
+
+- <details>
+   <summary><code>Abstract/</code> | 2025-09-01 — сверстанный по учебному курсу с YouTube</summary>
+   <img src="Abstract/images/poster-1.png" alt="Poster_Abstract" width="400">
 </details><br>
 
 - *(в будущем)* новые проекты и страницы.
@@ -54,7 +59,7 @@
 
 - **HTML5**, **CSS3**, **JavaScript**
 - **Tools**: *[Visual Studio Code](https://code.visualstudio.com/)*
-- **Libraries**: *[Swiper](https://swiperjs.com/)*
+- **Libraries**: *[Swiper](https://swiperjs.com/)*, *[GSAP](https://www.gsap.com/)*
 
 ---
 
