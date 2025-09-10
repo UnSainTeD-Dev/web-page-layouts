@@ -1,0 +1,62 @@
+/**! ==================== RESET ==================== **/
+
+*{border: 0;margin: 0;padding: 0;}
+html,body{box-sizing: border-box;min-height:100vh;width:100%;line-height:1;font-size:100%;}
+*,*:before,*:after{-moz-box-sizing: inherit;-webkit-box-sizing: inherit;box-sizing: inherit;}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+input,button,textarea{font-family:inherit;font-size: inherit;resize: none;}
+input::-ms-clear{display: none;}
+button{background-color: transparent;cursor: pointer;}
+button::-moz-focus-inner{border:0;padding:0;}
+a,a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6,blockquote{font-weight: inherit;font-size:inherit;text-wrap: balance;}
+a{color:inherit;}
+address{font-style: normal;}
+
+/**! ==================== PAGE STYLE ==================== **/
+
+:root {
+    --container-max: 1470px;
+    --border-rad: 12px;
+    --outline-white: 2px solid rgb(255, 255, 255);
+    --outline-dark: 2px solid rgb(33, 33, 33);
+    --outline-green: 2px solid rgb(0, 180, 60);
+    --outline-green-50: 2px solid rgba(0, 180, 60, .5);
+    --lh-heading: 1.25;
+    --lh-text: 1.5;
+    --ff: "Poppins", "Georgia", sans-serif;
+    --color-txt-dark: rgb(33, 33, 33);
+    --color-txt-white: rgb(255, 255, 255);
+    --txt-sh-heading: -1px 2px 2px rgba(0, 0, 0, .75);
+    --txt-sh-text: -1px 1px 2px rgba(33, 33, 33, .75);
+}
+
+body {
+    background: rgb(245, 245, 245);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.container {
+    max-width: var(--container-max);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/**! ==================== SCROLLBAR ==================== **/
+
+::-webkit-scrollbar {display: none;}

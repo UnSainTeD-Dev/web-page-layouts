@@ -1,0 +1,492 @@
+@media (min-width: 1920px) {}
+
+@media (max-width: 1640px) {
+
+    /** ==================== SECTION GALLERY ==================== **/
+
+    .gallery__container {
+        max-width: 1420px;
+    }
+
+    .gallery__btn {
+        border-radius: calc(var(--border-rad) / 2);
+        padding: .3rem .5rem;
+    }
+
+    .gallery__btn--prev {
+        left: 75px;
+    }
+
+    .gallery__btn--next {
+        right: 75px;
+    }
+
+    .gallery__viewport {
+        max-width: 1200px;
+    }
+
+    .gallery__wrap img {
+        height: 650px;
+        width: 400px;
+    }
+
+    /** ==================== 1640px ==================== **/
+}
+
+@media (max-width: 1440px) {
+
+    /**! ==================== PAGE STYLE ==================== **/
+
+    .section-title {
+        padding: 0 0 30px;
+    }
+
+    /** ==================== SECTION TOURS ==================== **/
+
+    .tours__list {
+        justify-content: space-evenly;
+        padding: 0 40px;
+    }
+
+    .tours__item {
+        height: 500px;
+        width: 250px;
+    }
+
+    .tours__img {
+        object-fit: cover;
+        height: 200px;
+        width: 200px;
+        margin: 0 auto 10px;
+    }
+
+    .tours__place {
+        font-weight: 500;
+        font-size: 1.75rem;
+        margin-bottom: 5px;
+    }
+
+    .tours__description {
+        margin-bottom: 15px;
+        text-wrap: balance;
+    }
+
+    /** ==================== SECTION ABOUT ==================== **/
+
+    .about {
+        padding: 70px 0 30px;
+    }
+
+    .about__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about__desc {
+        flex-direction: unset;
+        justify-content: unset;
+        max-width: 1000px;
+        gap: 40px;
+        padding: 40px 0;
+    }
+
+    .about__desc-text {
+        font-size: 1.5rem;
+        word-spacing: 1px;
+        padding: 35px;
+    }
+
+    .about__collage {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 80%;
+        gap: 5px;
+    }
+
+    .about__item--1 {
+        grid-column: 1 / span 3;
+        grid-row: 2 / span 2;
+        aspect-ratio: 16 / 8;
+    }
+
+    .about__item--2 {
+        grid-column: 3 / span 2;
+        grid-row: 1 / span 3;
+        aspect-ratio: 3 / 3.5;
+    }
+
+    .about__item--3 {
+        grid-column: 2 / span 3;
+        grid-row: 3 / span 3;
+    }
+
+    /** ==================== SECTION REVIEWS ==================== **/
+
+    .reviews__list {
+        justify-content: space-evenly;
+        padding: 0 20px;
+    }
+
+    .reviews__item {
+        max-height: 600px;
+        max-width: 250px;
+        gap: 8px;
+        padding: 10px;
+    }
+
+    .reviews__img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .reviews__name {
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.25rem;
+    }
+
+    .reviews__text {
+        text-align: center;
+        font-weight: 200;
+        font-style: italic;
+        font-size: 0.85em;
+        text-wrap: balance;
+    }
+
+    /** ==================== SECTION GALLERY ==================== **/
+
+    .gallery__container {
+        max-width: 950px;
+    }
+
+    .gallery__btn {
+        border-radius: calc(var(--border-rad) / 2);
+        padding: .3rem .5rem;
+    }
+
+    .gallery__btn--prev {
+        left: 0;
+    }
+
+    .gallery__btn--next {
+        right: 0;
+    }
+
+    .gallery__viewport {
+        max-width: 900px;
+    }
+
+    .gallery__wrap img {
+        height: 500px;
+        width: 300px;
+    }
+
+    /** ==================== SECTION CONTACT ==================== **/
+
+    .contact__container {
+        flex-direction: column;
+        justify-content: unset;
+        align-items: center;
+        gap: 40px;
+    }
+
+    /** ==================== 1440px ==================== **/
+}
+
+@media (max-width: 1280px) {
+
+    /** ==================== SECTION TOURS ==================== **/
+
+    .tours {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0 70px;
+    }
+
+    .tours__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: unset;
+        gap: 40px 80px;
+    }
+
+    .tours__place {
+        font-size: 1.5rem;
+    }
+
+    /** ==================== SECTION REVIEWS ==================== **/
+
+    .reviews {
+        display: flex;
+        flex-direction: column;
+        padding: 70px 0 70px;
+    }
+
+    .reviews__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: unset;
+        gap: 20px 40px;
+    }
+
+    .reviews__item {
+        max-width: 280px;
+    }
+
+    /** ==================== 1280px ==================== **/
+}
+
+@media (max-width: 1024px) {
+
+    /** ==================== HEADER SLIDER ==================== **/
+
+    .header__nav-btn {
+        position: relative;
+        display: flex;
+        z-index: 10;
+        margin: 0 auto;
+    }
+
+    .header__nav-btn span {
+        background-color: rgb(33, 33, 33);
+        outline: var(--outline-white);
+        height: 3px;
+    }
+
+    .header__nav-list {
+        position: absolute;
+        inset: 0;
+        flex-direction: column;
+        justify-content: unset;
+        background-color: rgb(33, 33, 33);
+        height: 100vh;
+        align-items: center;
+        transition: transform .3s ease, opacity .2s ease;
+        transform: translateY(-100%);
+        will-change: transform;
+        z-index: 5;
+        gap: 50px;
+        padding: 200px 0 0;
+        opacity: 0;
+    }
+
+    .header__nav-list.header__nav-list--active {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    /** ==================== SECTION GALLERY ==================== **/
+
+    .gallery__container {
+        max-width: 650px;
+    }
+
+    .gallery__btn {
+        padding: .5rem .6rem;
+    }
+
+    .gallery__viewport {
+        max-width: 600px;
+    }
+
+    .gallery__wrap img {
+        height: 400px;
+        width: 200px;
+    }
+
+    /** ==================== SECTION CONTACT ==================== **/
+    /** ==================== CONTACT OFFICES ==================== **/
+
+    .contact__offices {
+        max-width: 420px;
+        padding: 0 15px 0;
+    }
+
+    .contact__offices-list {
+        grid-template-columns: repeat(1, 1fr);
+        max-width: 400px;
+        gap: 10px;
+    }
+
+    .contact__offices-item {
+        display: flex;
+        flex-direction: column;
+        background-color: rgba(66, 66, 66, .75);
+        border-radius: var(--border-rad);
+        outline: var(--outline-white);
+        max-width: 312.5px;
+        font-family: var(--ff);
+        color: var(--color-txt-white);
+        gap: 10px;
+        padding: 6px 16px;
+        white-space: nowrap;
+    }
+
+    /** ==================== 1024px ==================== **/
+}
+
+@media (max-width: 768px) {
+
+    /**! ==================== PAGE STYLE ==================== **/
+
+    .section-title {
+        font-size: 2rem;
+        padding: 0 0 20px;
+    }
+
+    .section-subtitle {
+        font-size: 1.75rem;
+        padding: 0 0 20px;
+    }
+
+    /** ==================== SECTION TOURS ==================== **/
+
+    .tours {
+        padding: 50px 0 50px;
+    }
+
+    .tours__list {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .tours__item {
+        height: 450px;
+        width: 220px;
+        padding: 10px 10px 20px;
+    }
+
+    .tours__place {
+        font-size: 1.25rem;
+    }
+
+    .tours__link {
+        align-self: center;
+    }
+
+    /** ==================== SECTION ABOUT ==================== **/
+
+    .about {
+        padding: 50px 0 30px;
+    }
+
+    .about__desc {
+        flex-direction: column;
+        max-width: 480px;
+        gap: 20px;
+        padding: 0 0 30px;
+    }
+
+    .about__desc-text {
+        text-align: center;
+        font-size: 1.25rem;
+        padding: 15px;
+    }
+
+    .about__collage {
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(5, 1fr);
+        width: 100%;
+    }
+
+    .about__item--1 {
+        grid-column: 1 / span 4;
+        grid-row: 2 / span 2;
+        aspect-ratio: 16 / 8;
+    }
+
+    .about__item--2 {
+        grid-column: 4 / span 3;
+        grid-row: 1 / span 3;
+        aspect-ratio: 3 / 3.5;
+    }
+
+    .about__item--3 {
+        grid-column: 2 / span 4;
+        grid-row: 3 / span 3;
+    }
+
+    /** ==================== SECTION REVIEWS ==================== **/
+
+    .reviews {
+        padding: 50px 0 50px;
+    }
+
+    .reviews__list {
+        gap: 20px;
+        padding: 0;
+    }
+
+    .reviews__item {
+        max-width: 240px;
+    }
+
+    /** ==================== SECTION GALLERY ==================== **/
+
+    .gallery__container {
+        max-width: 550px;
+    }
+
+    .gallery__btn {
+        display: none;
+    }
+
+    .gallery__viewport {
+        max-width: 500px;
+    }
+
+    .gallery__wrap img {
+        height: 380px;
+        width: 150px;
+    }
+
+    /** ==================== SECTION CONTACT ==================== **/
+    /** ==================== CONTACT OFFICES ==================== **/
+
+    .contact__offices-item {
+        text-align: center;
+    }
+
+    /** ==================== CONTACT FORM ==================== **/
+
+    .contact__form-body {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .contact__input {
+        width: 100%;
+    }
+
+    .contact__textarea {
+        margin: 0;
+    }
+
+    /** ==================== 768px ==================== **/
+
+}
+
+@media (max-width: 480px) {
+
+    /** ==================== SECTION TOURS ==================== **/
+
+    .tours__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .tours__item {
+        height: 500px;
+        width: 230px;
+        padding: 10px 15px 20px;
+    }
+
+    /** ==================== SECTION REVIEWS ==================== **/
+
+    .reviews__list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    /** ==================== 480px ==================== **/
+}

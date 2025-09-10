@@ -421,10 +421,10 @@
 
 .contacts__form {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     max-width: 580px;
     margin: 0 auto;
-    flex-wrap: wrap;
 }
 
 /** FORM **/
@@ -480,8 +480,8 @@
 
 .blog__item {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .blog__item-img {
@@ -490,9 +490,9 @@
 }
 
 .blog__item-title {
+    flex-basis: 446px;
     font-weight: 700;
     font-size: 24px;
-    flex-basis: 446px;
 }
 
 .blog__item-link {
@@ -576,9 +576,9 @@
 .card__description {
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    border-bottom: 1px solid #0066ff;
     border-top: 1px solid #0066ff;
+    border-bottom: 1px solid #0066ff;
+    gap: 20px;
 }
 
 .card__title {

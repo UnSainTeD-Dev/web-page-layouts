@@ -38,8 +38,8 @@
 
     /** BLOG **/
     .blog__item-title {
-        font-size: 18px;
         flex-basis: 350px;
+        font-size: 18px;
     }
 
     /** NEW CARS **/
@@ -71,10 +71,10 @@
         align-items: center;
         transition: transform .3s ease, opacity .2s ease;
         transform: translateY(-100%);
+        will-change: transform;
         z-index: 1;
         padding-top: 200px;
         opacity: 0;
-        will-change: transform;
     }
 
     .nav__list.nav__list--active {
@@ -98,8 +98,8 @@
     }
 
     .blog__item-title {
-        font-size: 16px;
         flex-basis: 280px;
+        font-size: 16px;
     }
 
     .blog__item-link {

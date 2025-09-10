@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="160" height="120" viewBox="50 20 250 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: none; }
+    .accent { fill: #FFB74D; stroke: #37474F; }
+    .accent-stroke { stroke: #2196F3; stroke-width: 10; fill: #F5F5F5; }
+  </style>
+
+  <!-- Compass + Clock emblem -->
+  <g transform="translate(70,20)">
+    <!-- Outer clock circle -->
+    <circle cx="100" cy="100" r="80" class="accent-stroke" stroke-linecap="round"/>
+    <!-- Hour ticks (12, 3, 6, 9) -->
+    <line x1="100" y1="25" x2="100" y2="40" class="accent-stroke" stroke-width="6"/>
+    <line x1="175" y1="100" x2="160" y2="100" class="accent-stroke" stroke-width="6"/>
+    <line x1="100" y1="175" x2="100" y2="160" class="accent-stroke" stroke-width="6"/>
+    <line x1="25" y1="100" x2="40" y2="100" class="accent-stroke" stroke-width="6"/>
+    <!-- Compass needle (diamond) -->
+    <g transform="translate(100,100) rotate(-40)">
+      <polygon points="0,-55 10,0 0,55 -10,0" class="accent" />
+      <circle r="6" fill="#F5F5F5"/>
+    </g>
+  </g>
+</svg>
